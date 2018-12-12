@@ -13,4 +13,7 @@ export default {
 </script>
 
 <style scoped>
+.col-12 {
+  background-color: rgb(136, 255, 255);
+}
 </style>
