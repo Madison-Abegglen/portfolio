@@ -28,7 +28,7 @@
       <div class="col-6 about-2">
         <h5
           class="txt-4"
-        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus accusantium sapiente possimus blanditiis, nisi quis iste laborum amet fugiat adipisci doloribus cupiditate eos facilis dolorem impedit, asperiores doloremque libero sunt labore animi debitis nemo? Numquam aliquid dolor ut dolore magnam reprehenderit repellendus voluptatem et incidunt temporibus eaque excepturi, esse commodi harum aperiam at nihil labore, unde deleniti nam rem laudantium fuga! Enim, quidem quisquam vero veniam harum porro expedita ipsum.</h5>
+        >As a self starter, I am comfortable leading conversation and assisting in driving decisions & designs in team environments, engaging with peers at a leadership capacity. I have experience with modern web frameworks and tools, working with relational database technologies, building with RESTful web services via JSON, as well as a strong customer focus and entrepreneurial mindset. With the enthusiasm and ability to work in a fast paced, rapidly changing environment with a positive attitude and professionalism, I would describe myself as a valuable asset to the IT workforce.</h5>
       </div>
     </div>
 
@@ -41,7 +41,7 @@
       </div>
       <div class="col-10 offset-1 skills-2">
         <h1 class="txt-6">
-          <i class="fas fa-angle-double-right"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum reiciendis similique porro rem? Vel veritatis labore quia optio laborum assumenda harum, quas illum pariatur nisi vero corrupti ipsam autem totam!
+          <i class="fas fa-angle-double-right"></i> Alongside a strong enthusiasm for building and working with languages of many types, there are several skills that accompany my full-stack software development certification. Here are a few to list: Javascript, HTML5, CSS, C#, Vue.js, jQuery, Bootstrap, Node.js, MongoDB, .NET, Visual Studio Code, SQL
         </h1>
       </div>
       <div class="col-10 offset-1 icon-p">
@@ -104,6 +104,7 @@
       </div>
     </div>
 
+    <!-- PROJECTS SECTION - DISPLAYS RECENT PROJECTS -->
     <div class="row s-4">
       <div class="col-10 offset-1 projects">
         <h1 class="txt-3">
@@ -112,21 +113,69 @@
       </div>
       <div class="col-8 offset-2 bki-l">
         <img :src="bki" class="proj-img">
-        <p
-          class="txt-7"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos, incidunt veritatis error sint est!</p>
+        <p class="txt-7">
+          BUMBLE Kanban is a collaborative project, that takes on the form of a nontrivial Vue.js front-end and Node.js back-end, resembling the widely-used and versatile Kanban board concept.
+          <a
+            class="castle-link"
+            href="https://bumble-kanban.herokuapp.com/"
+          >Click</a> here to view the deployed application.
+        </p>
       </div>
       <div class="col-8 offset-2 bki-r">
-        <p
-          class="txt-7"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos, incidunt veritatis error sint est!</p>
+        <p class="txt-7">
+          PartyOx, a collaborative project & PWA built to aid DJ's and social event hosts to manage song requests, utilizes Vue.js & Node.js allowing a host to create parties where others join & suggest songs.
+          <a
+            class="castle-link"
+            href="https://partyox.herokuapp.com/"
+          >Click</a> here to view the deployed application.
+        </p>
         <img :src="pol" class="proj-img">
       </div>
       <div class="col-8 offset-2 bki-l">
         <img :src="castleLogo" class="proj-img">
-        <p
-          class="txt-7"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos, incidunt veritatis error sint est!</p>
+        <p class="txt-7">
+          Castle Grimtol is a console game application made using C#, that allows users to move about a set of rooms & achieve objectives.
+          <a
+            class="castle-link"
+            href="https://github.com/Madison-Abegglen/castle-grimtol"
+          >Click</a> here to view the repository.
+        </p>
+      </div>
+    </div>
+
+    <!-- CONTACT INFO / SOCIAL MEDIA PRESENCES -->
+    <div class="row s-5">
+      <div class="col-10 offset-1 contact">
+        <h1 class="txt-5">
+          <i class="fas fa-angle-double-left"></i>Contact Me!
+          <i class="fas fa-angle-double-right"></i>
+        </h1>
+      </div>
+      <div class="col-4 offset-4 c-info">
+        <p class="txt-8">email | madison.abegglen@gmail.com</p>
+        <p class="txt-8"># | 208-573-7663</p>
+      </div>
+      <div class="col-4 offset-4">
+        <div class="row iconz">
+          <a class="col-2 c-icon-fb" href="https://www.facebook.com/marilacy">
+            <i class="fab fa-facebook fa-4x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/madison-abegglen-708338121/" class="col-2 c-icon-li">
+            <i class="fab fa-linkedin fa-4x"></i>
+          </a>
+          <a href="https://github.com/Madison-Abegglen" class="col-2 c-icon-gi">
+            <i class="fab fa-github-square fa-4x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUOTE ROW -->
+    <div class="row s-6">
+      <div class="col-8 offset-2 quote">
+        <h5
+          class="txt-9"
+        >“Nothing is particularly hard if you divide it into small jobs.” | Henry Ford</h5>
       </div>
     </div>
   </div>
@@ -137,7 +186,7 @@
 import profilePic from "@/assets/images/compressed-version.jpg";
 import bki from "@/assets/images/bki-logo.jpg";
 import poLogo from "@/assets/images/po-logo.jpg";
-import castleLogo from "@/components/castle-logo.jpg";
+import castleLogo from "@/assets/images/new-castle-logo.jpg";
 import navbar from "@/components/navbar.vue";
 
 export default {
@@ -157,6 +206,9 @@ export default {
 </script>
 
 <style scoped>
+.castle-link {
+  color: rgb(106, 220, 255);
+}
 .top {
   height: 80vh;
 }
@@ -173,6 +225,14 @@ export default {
   background-color: rgb(66, 66, 66);
   /* display: flex; */
   /* align-items: flex-start; */
+}
+.s-5 {
+  height: 40vh;
+  background-color: rgb(196, 196, 196);
+}
+.s-6 {
+  height: 15vh;
+  background-color: rgb(66, 66, 66);
 }
 .hero-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -232,6 +292,7 @@ export default {
   justify-content: flex-start;
   align-items: flex-start;
   padding-top: 8vh;
+  padding-right: 3rem;
   background-color: rgb(160, 160, 160, 0.4);
   border-bottom: solid white;
 }
@@ -263,7 +324,7 @@ export default {
 }
 .proj-img {
   height: 8rem;
-  width: 25rem;
+  width: 24rem;
   border-radius: 2.5px;
   margin: 0.5rem;
 }
@@ -292,7 +353,37 @@ export default {
   align-items: center;
   /* margin: 0; */
 }
-
+.contact {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-info {
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-icon-fb {
+  margin: 1rem;
+  color: rgb(31, 54, 187);
+}
+.c-icon-li {
+  margin: 1rem;
+  color: rgb(31, 151, 187);
+}
+.c-icon-gi {
+  margin: 1rem;
+  color: rgb(66, 68, 80);
+}
+.iconz {
+  display: flex;
+  justify-content: center;
+}
+.fa-angle-double-left {
+  margin-right: 1rem;
+}
 .txt-1 {
   font-family: "Roboto", sans-serif;
   color: white;
@@ -346,8 +437,8 @@ export default {
   /* text-shadow: 0 0 1px rgb(0, 0, 0, 0.5); */
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
   /* margin-top: 4rem; */
 }
 .txt-7 {
@@ -358,6 +449,31 @@ export default {
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 15px;
-  text-align: center;
+  text-align: start;
+  margin-left: 1rem;
+}
+.txt-8 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(34, 34, 34);
+  /* text-shadow: 0 0 1px rgb(0, 0, 0, 0.5); */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 10px;
+  margin: 0;
+}
+.txt-9 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(245, 245, 245);
+  /* text-shadow: 0 0 1px rgb(0, 0, 0, 0.5); */
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
