@@ -1,7 +1,7 @@
 <template>
-  <div class="row">
-    <div class="col-12">
-      <h1>This is the navbar</h1>
+  <div class="row bar">
+    <div class="col-12 items">
+      <h1>Madison Abegglen</h1>
     </div>
   </div>
 </template>
@@ -13,7 +13,14 @@ export default {
 </script>
 
 <style scoped>
-.col-12 {
-  background-color: rgb(136, 255, 255);
+.bar {
+  height: 10vh;
+  background-color: rgb(196, 196, 196);
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
