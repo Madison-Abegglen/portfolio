@@ -112,13 +112,21 @@
       </div>
       <div class="col-8 offset-2 bki-l">
         <img :src="bki" class="proj-img">
-        <p></p>
+        <p
+          class="txt-7"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos, incidunt veritatis error sint est!</p>
       </div>
       <div class="col-8 offset-2 bki-r">
-        <img :src="bki" class="proj-img">
+        <p
+          class="txt-7"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos, incidunt veritatis error sint est!</p>
+        <img :src="pol" class="proj-img">
       </div>
       <div class="col-8 offset-2 bki-l">
-        <img :src="bki" class="proj-img">
+        <img :src="castleLogo" class="proj-img">
+        <p
+          class="txt-7"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos, incidunt veritatis error sint est!</p>
       </div>
     </div>
   </div>
@@ -128,6 +136,8 @@
 // @ is an alias to /src
 import profilePic from "@/assets/images/compressed-version.jpg";
 import bki from "@/assets/images/bki-logo.jpg";
+import poLogo from "@/assets/images/po-logo.jpg";
+import castleLogo from "@/components/castle-logo.jpg";
 import navbar from "@/components/navbar.vue";
 
 export default {
@@ -135,7 +145,9 @@ export default {
   data() {
     return {
       profPic: profilePic,
-      bki: bki
+      bki: bki,
+      pol: poLogo,
+      castleLogo: castleLogo
     };
   },
   components: {
@@ -253,23 +265,27 @@ export default {
   height: 8rem;
   width: 25rem;
   border-radius: 2.5px;
+  margin: 0.5rem;
 }
 .bki-l {
-  border: solid red;
-  height: 25vh;
+  height: 20vh;
+  background-color: rgb(160, 160, 160, 0.4);
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-right: 1rem;
+  border-left: solid white;
 }
 .bki-r {
-  border: solid red;
-  height: 25vh;
+  height: 20vh;
+  background-color: rgb(160, 160, 160, 0.4);
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-left: 1rem;
+  border-right: solid white;
 }
 .projects {
-  border: solid red;
   height: 15vh;
   display: flex;
   justify-content: center;
@@ -333,5 +349,15 @@ export default {
   letter-spacing: 2px;
   font-size: 1.2rem;
   /* margin-top: 4rem; */
+}
+.txt-7 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-shadow: 0 0 1px rgb(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 15px;
+  text-align: center;
 }
 </style>
