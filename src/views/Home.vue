@@ -41,7 +41,8 @@
       </div>
       <div class="col-10 offset-1 skills-2">
         <h1 class="txt-6">
-          <i class="fas fa-angle-double-right"></i> Alongside a strong enthusiasm for building and working with languages of many types, there are several skills that accompany my full-stack software development certification. Here are a few to list: Javascript, HTML5, CSS, C#, Vue.js, jQuery, Bootstrap, Node.js, MongoDB, .NET, Visual Studio Code, SQL
+          <i class="fas fa-angle-double-right"></i> Alongside a strong enthusiasm for building and working with languages of many types, there are several skills that accompany my full-stack software development certification. Here are a few to list:
+          <br>Javascript, HTML5, CSS, C#, Vue.js, jQuery, Bootstrap, Node.js, MongoDB, .NET, Visual Studio Code, SQL
         </h1>
       </div>
       <div class="col-10 offset-1 icon-p">
@@ -303,7 +304,7 @@ export default {
   align-items: center;
 }
 .skills-2 {
-  height: 15vh;
+  height: 20vh;
   display: flex;
   align-items: flex-end;
 }
