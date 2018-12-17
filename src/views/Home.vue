@@ -291,8 +291,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 8vh;
+  align-items: center;
   padding-right: 3rem;
   background-color: rgb(160, 160, 160, 0.4);
   border-bottom: solid white;
@@ -449,7 +448,7 @@ export default {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
-  font-size: 15px;
+  font-size: 11px;
   text-align: start;
   margin-left: 1rem;
 }
