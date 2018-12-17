@@ -292,6 +292,7 @@ export default {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 2rem;
   padding-right: 3rem;
   background-color: rgb(160, 160, 160, 0.4);
   border-bottom: solid white;
