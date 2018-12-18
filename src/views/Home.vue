@@ -278,7 +278,7 @@ export default {
   padding-top: 8vh;
   background-color: rgb(160, 160, 160, 0.4);
   border-left: solid white;
-  border-bottom: solid white;
+  border-top: solid white;
 }
 .about {
   height: 15vh;
@@ -296,6 +296,7 @@ export default {
   padding-right: 3rem;
   background-color: rgb(160, 160, 160, 0.4);
   border-bottom: solid white;
+  border-right: solid white;
 }
 .skills {
   height: 15vh;
